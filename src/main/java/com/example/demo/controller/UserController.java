@@ -35,7 +35,7 @@ public class UserController {
 		userEntity.setEmail(email);
 		userEntity.setPassword(password);
 		userRepository.save(userEntity);
-		return "user added successfully";
+		return "User has been successfully added to the system";
 	}
 	
 	@GetMapping(path = "/all")
